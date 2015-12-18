@@ -134,6 +134,9 @@ header .button {
 .button:hover {
 	background-color: #e64437;
 }
+.button:active {
+	background-color: #b81609;
+}
 .st-button {
 	line-height: 18px;
 	padding-top: 6px;
@@ -147,4 +150,84 @@ header .button {
 	position: absolute;
 	width: 100%;
 	bottom: 32px;
+}
+.top-menu {
+	height: 62px;
+	background-color: #242424;
+	-webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	font-family: 'BebasRegular';
+	text-transform: uppercase;
+
+}
+
+.top-menu li {
+	float: left;
+}
+.top-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.active {
+	background-color: #050505;
+}
+.top-menu a {
+	color: #fff;
+	font-size: 20px;
+	padding: 0 26px 0 54px;
+	display: block;
+	line-height: 62px;
+	border-left: #3b3b3b 1px solid;
+	background-image: url(../img/top-menu-icons.png);
+	background-position: 20px 17px;
+	background-repeat: no-repeat;
+}
+.top-menu li.active,
+.top-menu li:hover {
+	background-color: #050505;
+}
+.top-menu li:nth-child(2) a {
+	background-position: 17px -71px;
+}
+.top-menu li:nth-child(3) a {
+	background-position: 18px -147px;
+}
+.top-menu li:nth-child(4) a {
+	background-position: 14px -230px;
+}
+.top-menu li:nth-child(5) a {
+	background-position: 16px -304px;
+}
+.top-menu li:nth-child(6) a {
+	background-position: 16px -374px;
+}
+.waranty {
+	float: right;
+	color: #fff;
+	cursor: default;
+	font-size: 15px;
+	border: 3px solid #fff;
+	border-radius: 3px;
+	padding: 3px 5px;
+	line-height: 16px;
+	margin-top: 9px;
+}
+.w-left,
+.w-right {
+	display: inline-block;
+	vertical-align: top;
+}
+.w-left {
+	font-family: 'BebasBold';
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 7px;
+}
+.w-left span {
+	font-size: 34px;
+	font-family: 'BebasBold';
+}
+.w-right {
+	font-family: 'RobotoCondensedRegular';
 }
