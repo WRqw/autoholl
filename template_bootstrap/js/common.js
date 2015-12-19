@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	$('.mc-item-wrap ul').each(function() {
+		$(this).after('<div class="mc-item-wrap-af"></div>');
+	});
+	$('.mc-toggle').click(function() {
+		$('.mc-item-wrap ul, .mc-item-wrap-af').hide();
+		$('.mc-item-wrap').removeClass('active');
+		$(this).parent().parent().addClass('active');
+		$(this).parent().parent().children('ul').show();
+		$(this).parent().parent().children('.mc-item-wrap-af').show(0);
+	});
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
