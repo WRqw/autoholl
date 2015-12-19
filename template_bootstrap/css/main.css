@@ -169,7 +169,7 @@ header .button {
 	padding: 0;
 	list-style-type: none;
 }
-.active {
+.top-menu .active {
 	background-color: #050505;
 }
 .top-menu a {
@@ -230,4 +230,118 @@ header .button {
 }
 .w-right {
 	font-family: 'RobotoCondensedRegular';
+}
+.main-cats {
+	background-color: #191919;
+	padding: 20px 0 32px;
+}
+.main-cats h2 {
+	text-transform: uppercase;
+	color: #c9c9c9;
+		font-family: "BebasRegular";
+		font-size: 40px;
+		text-align: center;
+}
+.main-cats h2 strong {
+	color: #fff;
+}
+.main-cats h2 span {
+	color: #d12f22;
+}
+section h2 {
+	position: relative;
+}
+.s-black h2::before {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/title-lines.png);
+	top: 17px;	
+	margin-left: -68px;
+}
+.s-black h2::after {
+	content: '';
+	position: absolute;
+	background-position: -50px 0;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/title-lines.png);
+	top: 17px;	
+	margin-left: 20px;
+}
+.mc-item {
+	border: 1px solid #353535;
+	border-radius: 2px;	
+}
+.mc-item h4 {
+	font-weight: normal;
+	font-family: 'BebasBold';
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 7px;
+}
+.mc-item a:hover h4,
+.mc-item-wrap.active h4 {
+	text-decoration: underline;
+}
+.mc-item-wrap.active,
+.mc-item-wrap:hover {
+	background-color: #2a2a2a;
+}
+.mc-item-wrap {
+	margin-left: 30px;
+	width: 160px;
+	display: inline-block;
+	text-align: center;
+}
+.mc-item-wrap:nth-child(1) {
+	margin-left: 0;
+}
+.mc-item-wrap a {
+	color: #fff;
+}
+.mc-item span {
+	display: block;
+	height: 85px;
+	width: 130px;
+	background-image: url(../img/cats-icons.png);
+	background-position: ;
+	margin: 15px auto 0;
+}
+.mc-item-wrap:nth-child(1) span {
+	background-position: 12px 0;
+}
+.mc-item-wrap:nth-child(2) span {
+	background-position: -112px 0;
+}
+.mc-item-wrap:nth-child(3) span {
+	background-position: -243px 0;
+}
+.mc-item-wrap:nth-child(4) span {
+	background-position: -364px 0;
+}
+.mc-item-wrap:nth-child(5) span {
+	background-position: -494px 0;
+}
+.mc-item-wrap:nth-child(6) span {
+	background-position: -618px 0;
+}
+.mc-wrap {
+	text-align: center;
+	padding: 0;
+}
+.mc-toggle {
+	background-color: #212121;
+	height: 25px;
+	position: relative;
+	cursor: pointer;
+	background-image: url(../img/mc-arr.png);
+	background-repeat: no-repeat;
+	background-position: -118px 8px;
+}
+.mc-item-wrap.active .mc-toggle,
+.mc-item-wrap:hover .mc-toggle {
+	background-color: #353535;
+	background-position: 72px 8px;
 }
