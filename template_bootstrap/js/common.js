@@ -3,11 +3,16 @@ $(document).ready(function() {
 		$(this).after('<div class="mc-item-wrap-af"></div>');
 	});
 	$('.mc-toggle').click(function() {
+		if ($(this).parent().parent().children('ul').is(':visible')) {
+			$(this).parent().parent().children('ul').slideUp();
+			$(this).parent().parent().children('.mc-item-wrap-af').hide();
+		} else {
 		$('.mc-item-wrap ul, .mc-item-wrap-af').hide();
 		$('.mc-item-wrap').removeClass('active');
 		$(this).parent().parent().addClass('active');
-		$(this).parent().parent().children('ul').show();
-		$(this).parent().parent().children('.mc-item-wrap-af').show(0);
+		$(this).parent().parent().children('ul').slideDown();
+		$(this).parent().parent().children('.mc-item-wrap-af').show();
+		}
 	});
 
 	//Цели для Яндекс.Метрики и Google Analytics
@@ -28,7 +33,7 @@ $(document).ready(function() {
 	//equalheight - одинаковая высота колонок
 	//Пример списка элементов:
 	//var eqElement = ".cat_container > div, .home_news > div"
-	var eqElement = ".element"
+	var eqElement = ".hi-item, .sb-content > div"
 	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
 
 	//Masked Input Plugin
